@@ -4,6 +4,11 @@ const BlueDiv = styled.div`
     background-color : skyblue
 `
 
+const ImgDiv = styled.img`
+    width : 100px;
+    height: 120px;
+`
+
 const ProductDetail = ({product}) => {
 
     const {pno,pname,price, imgFile} = product
@@ -14,7 +19,7 @@ const ProductDetail = ({product}) => {
         <BlueDiv>PNO : {pno}</BlueDiv>
         <div>pname : {pname}</div>
         <div>{price}</div>
-        <div className="imges"><img src={require(`../images/${imgFile}`)}/></div>
+        <div className="imges"><ImgDiv src={require(`../images/${imgFile}`)}/></div>
         <button>BUY</button>
     </li>
 
