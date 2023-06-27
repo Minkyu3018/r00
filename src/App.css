@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+.productList{
+  background-color: antiquewhite;
+  list-style: none;
+  border: 1px solid black;
+  display: flex;
+}
+
+.productList li {
+  margin: 2em;  
+  padding: 2em;
+  background-color: gold;
+  border: 3px solid red;
+}
+
+.imges img{
+
+  width : 100px;
+  height: 120px;
+}
